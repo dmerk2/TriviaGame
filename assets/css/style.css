@@ -16,7 +16,7 @@ body{
 }
 
 button{
-	font-size:30px;
+	font-size:25px;
 	background-color:grey;
 	padding:5px;
 	border:black;
@@ -24,6 +24,25 @@ button{
 	margin-bottom:10px; 
 }
 
-div{
-	font-align:left;
+button:hover{
+	color:red;
+	font-size:35px;
+	background-color:black; 
+}
+
+.hide {
+	display:none;
+}
+
+#start{
+	background-color:white;
+	color:black;
+	font-size:40px; 
+	margin-bottom:20px; 
+}
+
+#start:hover{
+	font-size:50px;
+	color:white;
+	background-color:black; 
 }
