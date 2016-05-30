@@ -1,17 +1,11 @@
-alert("Pick one answer per question!")
-console.log(alert)
+//alert("See if you can guess the right answer!")
 
-var wins;
+var incorrect=false;
+var correct=true;
+var wins wins =+ 1;
 var losses;
 var total;
-var userGuess = true || false;
+var userGuess = '';
 
-//When the document loads this function will happen
-$(document).ready(function(){
-	
-	if(q1 === 'a'){
-		alert("correct");
-	}	else	{
-		alert("incorrect");
-	};
+
 
