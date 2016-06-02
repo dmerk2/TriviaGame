@@ -1,19 +1,15 @@
-
-
-
-//HOW DO I ALERT ONLY 1 PAGE??
-
-
-
-//alert("See if you can guess the right answer!")
+//HOW DO I ALERT ONLY 1 PAGE??            
+alert("See if you can guess the right answer!")
 
 var incorrect = false;
 var correct = true;
-var unanswered = [];
 var pointsCorrect = [];
 var pointIncorrect = [];
 var userClick = '';
 var questionNumber;
+var timer;
+
+
 
 //when the document loads this will happen
 $(document).ready(function() {
@@ -24,23 +20,26 @@ $(document).ready(function() {
     $('.questions').removeClass('hide');
     //hides musicPic
     $('#musicPic').addClass('hide');
-  });
+    // Start Timer
+    setTimeout(timer, 2000);
+    });
 });
+//After 30 seconds alert 'Game Over' and Goes to action_page.html
+function timer() {
+  alert('Game Over!');
+  //go to action_page.hml
 
-//NEEDS TO START WHEN START BUTTON IS CLICKED!!
-function f(){
-  alert('I NEED TO END THE GAME NOW!!!')
-}
-setTimeout(f, 30 * 1000)
+};
+
 
 // var questionNumber = $('input').attr('name');
 // 	if (questionNumber ==='q1')
 		
 
-// // if ('userClick' ...for question 1.... === 'c'){
-// // 	pointCorrect =+ 1
-// // } else {
-// // 	pointsIncorrect =+ 1
-// // } else if {
-// // 	unanswered =+ 1
-// // };
+// if ('userClick' ...for question 1.... === 'c'){
+// 	pointCorrect =+ 1
+// } else {
+// 	pointsIncorrect =+ 1
+// } else if {
+// 	unanswered =+ 1
+// };
