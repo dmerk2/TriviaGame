@@ -1,5 +1,5 @@
 //HOW DO I ALERT ONLY 1 PAGE??            
-alert("See if you can guess the right answer!")
+//alert("See if you can guess the right answer!")
 
 var incorrect = false;
 var correct = true;
@@ -8,7 +8,6 @@ var pointIncorrect = [];
 var userClick = '';
 var questionNumber;
 var timer;
-
 
 
 //when the document loads this will happen
@@ -21,12 +20,13 @@ $(document).ready(function() {
     //hides musicPic
     $('#musicPic').addClass('hide');
     // Start Timer
-    setTimeout(timer, 2000);
+    setTimeout(timer, 3 * 1000);
     });
 });
 //After 30 seconds alert 'Game Over' and Goes to action_page.html
 function timer() {
   alert('Game Over!');
+  setTimeout(window.location.assign('action_page.html', 15 * 1000));
   //go to action_page.hml
 
 };
