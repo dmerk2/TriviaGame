@@ -38,11 +38,15 @@ $(document).ready(function() {
       //Next step would be to have clearTimeout work here so we can stop the setTimeout
  
     });
+
     var questions = $('input');
-    // this accounts for all radio buttons, so we'll loop over them with a 'FOR' loop
-    for (var i = 0; i < questions.length; i++){
+    // this FOR loop accounts for all radio buttons 
+    for (var i = 0 /* where we start looping in the array */; i < questions.length /* we */; i++){
+      
       // this checks to see if the radio button is checked or not.  If not, then this returns FALSE
-      console.log($(questions[i]).is(':checked'));
+      console.log($(questions[i]).is(':checked'));i
+      
+
     };
     
 });
