@@ -31,12 +31,13 @@
 
     <h4>Click below to play music!</h4>
 
+
+
     <!-- Having music play -->
-    <audio controls>
+    <audio controls autoplay>
       <source src="assets/mp3/green-day.mp3" type="audio/mpeg" href="assets/green-day.mp3">
     </audio>
 
-    <form action="action_page.html" method = "GET">    
     <!-- Adding image -->
     <img src='assets/images/questionMark.jpg'/>
 
@@ -44,19 +45,19 @@
     <h3>What band sings "Boulevard of Broken Dreams"?</h3>
     <input type="radio" name="q1" value="a"> Blink-182
     <input type="radio" name="q1" value="b"> Sum 41
-    <input type="radio" name="q1" value="c" correct="true"> Green Day
+    <input type="radio" name="q1" value="c"> Green Day
     <input type="radio" name="q1" value="d"> Simple Plan<br/><br/>
 
     	<!-- Girl Power -->
     <h3>Which of these was the Spice Girls slogan?</h3>
     <input type='radio' name='q2' value='a'> Flower Power
-    <input type='radio' name='q2' value='b' correct='true'> Girl Power
+    <input type='radio' name='q2' value='b'> Girl Power
     <input type='radio' name='q2' value='c'> Lipstick and Power
     <input type='radio' name='q2' value='d'> Super Power <br/><br/>
 
     	<!--Chad Kroeger-->
     <h3>Which of these singers sang the theme song for the first Spiderman film?</h3>
-    <input type='radio' name='q3' value='a' correct='true'> Chad Kroeger
+    <input type='radio' name='q3' value='a'> Chad Kroeger
     <input type='radio' name='q3' value='b'> Aerosmith
     <input type='radio' name='q3' value='c'> Avril Levine
     <input type='radio' name='q3' value='d'> Wil Smith <br/><br/>
@@ -64,24 +65,24 @@
     	<!--Brian May-->
     <h3>Who was the lead guitarist for Queen?</h3>
     <input type='radio' name='q4' value='a'> Freddy Mercury
-    <input type='radio' name='q4' value='b' correct='true'> Brian May
+    <input type='radio' name='q4' value='b'> Brian May
     <input type='radio' name='q4' value='c'> Ringo Star
     <input type='radio' name='q4' value='d'> George Harrison <br/><br/>
 
     	<!--Canada-->
     <h3>Where are Nickleback from?</h3>
     <input type='radio' name='q5' value='a'> USA
-    <input type='radio' name='q5' value='b' correct='true'> Canada
+    <input type='radio' name='q5' value='b'> Canada
     <input type='radio' name='q5' value='c'> Australia
-    <input type='radio' name='q5' value='d'> English; <br/><br/>
+    <input type='radio' name='q5' value='d'> English <br/><br/>
    
     	<!--False-->
     <h3>The band R.E.M. split up in 1999?</h3>
     <input type='radio' name='q6' value='a'> True
-    <input type='radio' name='q6' value='b' correct='true'> False <br/><br/>
+    <input type='radio' name='q6' value='b'> False <br/><br/>
 
     <br>
-    <button id="check-radios">Submit</button>
+    <button id="submit">Submit</button>
   </div>
 
     <div id="results" class="hide">
