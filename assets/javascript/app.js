@@ -1,7 +1,7 @@
 //alert("You have 30 seconds after pushing start to finish!")
 
-var incorrect = false;
-var correct = true;
+var incorrect = 0;
+var correct = 0;
 var pointsCorrect = [];
 var pointIncorrect = [];
 var userClick = '';
@@ -11,10 +11,10 @@ var intervalId;
 
 //when the document loads this will happen
 $(document).ready(function() {
-	//when you click start..
+  //when you click start..
   $('#start').click(function() {
-  	//hides the start button
-  	$('#start').addClass('hide');
+    //hides the start button
+    $('#start').addClass('hide');
     //add the questions on the page
     $('.questions').removeClass('hide');
     //hides musicPic
@@ -41,11 +41,16 @@ $(document).ready(function() {
 
     var questions = $('input');
     // this FOR loop accounts for all radio buttons 
-    for (var i = 0 /* where we start looping in the array */; i < questions.length /* we */; i++){
+    for (var i = 0; i < questions.length; i++){
       
+      
+
       // this checks to see if the radio button is checked or not.  If not, then this returns FALSE
       console.log($(questions[i]).is(':checked'));i
+      }
       
+
+
 
     };
     
@@ -64,5 +69,3 @@ function showTimeLeft() {
       clearInterval(intervalId)
     };
 }
-
-
