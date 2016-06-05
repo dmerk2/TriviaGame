@@ -1,4 +1,5 @@
-//alert("You have 30 seconds after pushing start to finish!")
+alert("You have 30 seconds after pushing start to finish!")
+
 
 var incorrect = 0;
 var correct = 0;
@@ -33,39 +34,35 @@ $(document).ready(function() {
       //results show
       $('#results').removeClass('hide');
       //end time remaining
-      clearInterval(intervalId)      
-      //TIMER IS STILL RUNNING AND NEEDS TO BE FIXED!!
-      //Next step would be to have clearTimeout work here so we can stop the setTimeout
- 
+      clearInterval(intervalId);           
     });
 
-    var questions = $('input');
-    // this FOR loop accounts for all radio buttons 
-    for (var i = 0; i < questions.length; i++){
-      
-      
-
-      // this checks to see if the radio button is checked or not.  If not, then this returns FALSE
-      console.log($(questions[i]).is(':checked'));i
-      }
+    // var questions = $('input');
+    // // this FOR loop accounts for all radio buttons 
+    // for (var i = 0; i < questions.length; i++){
       
 
+      
+    //   // this checks to see if the radio button is checked or not.  If not, then this returns FALSE
+    //   console.log($(questions[i]).is(':checked'));i 
+    });
+  
 
-
-    };
-    
-});
-//After 30 seconds alert 'Game Over' 
 function timer() {
-  //alert('Game Over!');
   $('#results').removeClass('hide');
   $('.questions').addClass('hide');
 };
 
 function showTimeLeft() {
   timeRemaining--;
-  $('#timer').html(timeRemaining)
+  $('#timer').html(timeRemaining);
     if (timeRemaining === 0){
-      clearInterval(intervalId)
+      clearInterval(intervalId);
+      //alerts game over only when the timer hits 0 while playing
+      alert("Game Over")
     };
-}
+  };
+     
+
+
+
