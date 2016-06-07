@@ -26,7 +26,7 @@ $(document).ready(function() {
       intervalId = setInterval(showTimeLeft, 1000);
   });
     //When you click submit...
-    $("#submit").click(function(){
+    $("#submit").click(function() {
       //submit button hides
       $('#submit').addClass('hide');
       //questions hide
@@ -34,17 +34,20 @@ $(document).ready(function() {
       //results show
       $('#results').removeClass('hide');
       //end time remaining
-      clearInterval(intervalId);           
-    });
+      clearInterval(intervalId); 
 
-    // var questions = $('input');
-    // // this FOR loop accounts for all radio buttons 
-    // for (var i = 0; i < questions.length; i++){
-      
 
-      
-    //   // this checks to see if the radio button is checked or not.  If not, then this returns FALSE
-    //   console.log($(questions[i]).is(':checked'));i 
+      //get the number of correct
+      var numberCorrect = $('input[data-correct="correct"]:checked').length;
+      var numberIncorrect = 6 - numberCorrect;
+
+      //puts on the html what questions were correct vs incorrect
+      $('#correct').html(numberCorrect);
+      $("#incorrect").html(numberIncorrect);
+
+
+      });
+
     });
   
 
@@ -59,10 +62,13 @@ function showTimeLeft() {
     if (timeRemaining === 0){
       clearInterval(intervalId);
       //alerts game over only when the timer hits 0 while playing
-      alert("Game Over")
+      alert("Game Over");
+      var numberCorrect = $('input[data-correct="correct"]:checked').length;
+      var numberIncorrect = 6 - numberCorrect;
+
+      //puts on the html what questions were correct vs incorrect
+      $('#correct').html(numberCorrect);
+      $("#incorrect").html(numberIncorrect);
+
     };
   };
-     
-
-
-
