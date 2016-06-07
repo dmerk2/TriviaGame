@@ -37,7 +37,7 @@ $(document).ready(function() {
       clearInterval(intervalId); 
 
 
-      //get the number of correct
+      //get the number of correct... :checked is what the user checked
       var numberCorrect = $('input[data-correct="correct"]:checked').length;
       var numberIncorrect = 6 - numberCorrect;
 
