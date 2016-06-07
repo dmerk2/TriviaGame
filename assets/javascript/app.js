@@ -45,7 +45,6 @@ $(document).ready(function() {
       $('#correct').html(numberCorrect);
       $("#incorrect").html(numberIncorrect);
 
-
       });
 
     });
