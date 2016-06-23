@@ -45,3 +45,16 @@ button:hover{
 	color:white;
 	background-color:black; 
 }
+
+.active{
+	padding-top: 15px;
+	margin: auto;
+	font-size: 20px;
+	text-align: center;
+	color:white;
+}
+
+.active:hover{
+	font-size: 30px;
+	color: white;
+}
