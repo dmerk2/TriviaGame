@@ -60,6 +60,7 @@ function showTimeLeft() {
   $('#timer').html(timeRemaining);
     if (timeRemaining === 0){
       clearInterval(intervalId);
+      
       //alerts game over only when the timer hits 0 while playing
       alert("Game Over");
       var numberCorrect = $('input[data-correct="correct"]:checked').length;
